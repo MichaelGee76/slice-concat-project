@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="outerContainer">
+            <h1>String Slicer Dicer</h1>
+            <form onsubmit="return false">
+                <label for=""> What to slice? </label>
+                <input
+                    type="text"
+                    id="sliceWhat"
+                    placeholder="Your text here"
+                    onfocus="this.value=''"
+                    required
+                />
+                <label for="">Where to slice</label>
+                <input
+                    type="text"
+                    placeholder="Where to slice the string"
+                    id="sliceWhere"
+                    onfocus="this.value=''"
+                    required
+                />
+                <div class="innerContainer">
+                    <label for="">
+                        Slice before!
+                        <input type="radio" name="button" id="before" checked />
+                    </label>
+                    <label for="">
+                        Slice after!
+                        <input type="radio" name="button" id="after" />
+                    </label>
+                    <input
+                        type="submit"
+                        value="Click"
+                        onclick="slicerDicer()"
+                    />
+                </div>
+            </form>
+            <h2 class="errorMsg" style="color: red"></h2>
+            <!-- <h2>Output:</h2> -->
+            <h3>Before:</h3>
+            <h4 class="beforeOutput"></h4>
+            <h3>After:</h3>
+            <h4 class="afterOutput"></h4>
+        </div>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

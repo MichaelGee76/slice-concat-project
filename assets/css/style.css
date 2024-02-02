@@ -1,0 +1,51 @@
+.outerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 2rem;
+    border-radius: 5px;
+
+    width: 40vw;
+    min-height: 40vw;
+    margin: auto;
+    background-color: aqua;
+    margin-top: 5vw;
+}
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 0.5rem;
+}
+
+/* form * {
+    display: block;
+} */
+
+form input[type="text"] {
+    box-shadow: -3px -1px 13px rgba(66, 66, 66, 0.4);
+    padding: 0.5rem;
+    width: 90%;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+h3,
+h4 {
+    margin-bottom: 0.5rem;
+}
+
+h4 {
+    color: rgba(55, 52, 52, 0.85);
+    font-style: italic;
+    font-size: 1.5rem;
+    padding-left: 5%;
+}
